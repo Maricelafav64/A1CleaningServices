@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+        <title>TGH Servicios de Limpieza</title>
+        <link rel="stylesheet" href="style.css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+      </head>
+      
+      
+      <script>
+        const slide1Items = [
+          '<img src="media/imagen1.jpg" alt="Foto 1">',
+          '<img src="media/imagen2.jpg" alt="Foto 2">',
+          '<img src="media/imagen3.jpg" alt="Foto 3">',
+          '<img src="media/imagen4.jpg" alt="Foto 4">',
+          '<video src="media/video1.mp4" autoplay muted loop></video>',
+          '<img src="media/imagen5.jpg" alt="Foto 5">',
+          '<video src="media/video2.mp4" autoplay muted loop></video>',
+          '<img src="media/imagen6.jpg" alt="Foto 6">',
+          '<video src="media/video3.mp4" autoplay muted loop></video>',
+          '<video src="media/video4.mp4" autoplay muted loop></video>'
+        ];
+      
+        const slide2Items = [...slide1Items]; // Puedes personalizar diferente si quieres
+        const slide3Items = [...slide1Items];
+      
+        let index = 0;
+      
+        setInterval(() => {
+          index = (index + 1) % slide1Items.length;
+          document.getElementById("slide1").innerHTML = slide1Items[index];
+          document.getElementById("slide2").innerHTML = slide2Items[index];
+          document.getElementById("slide3").innerHTML = slide3Items[index];
+        }, 5000); // cada 5 segundos cambia
+      </script>
+      
+
+<body>
+  
+
+    <!-- Logo de la empresa -->
+    <header class="logo-banner">
+      <div class="logo-container">
+        <img src="media/logoA1.png" alt="A1 Cleaning Services" />
+        <h1 class="company-name">A1 Cleaning Services</h1>
+      </div>
+    </header>
+    
+    <nav class="main-nav">
+      <ul>
+        <li><a href="#inicio">Inicio</a></li>
+        <li><a href="#servicios">Servicios</a></li>
+        <li><a href="#galeria">Galería</a></li>
+        <li><a href="#contacto">Contacto</a></li>
+      </ul>
+    </nav>
+
+    <div class="slogan">
+      <p>Tu solución en limpieza de ventanas, patios y más</p>
+    </div>
+    
+    
+    
+  
+
+  <!-- Carrusel tipo galería de 3 barras -->
+  <section id="galeria">
+  <div class="gallery-carousel">
+    <div class="gallery-slide" id="slide1">
+      <img src="media/imagen1.jpg" alt="Foto 1">
+    </div>
+    <div class="gallery-slide" id="slide2">
+      <video src="media/video1.mp4" autoplay muted loop></video>
+    </div>
+    <div class="gallery-slide" id="slide3">
+      <img src="media/imagen2.jpg" alt="Foto 2">
+    </div>
+  </div>
+  
+  
+  <!-- Información de servicios -->
+  <section id="servicios" class="services-section">
+<section class="info">
+    <h1>Somos A1 Cleaning Services </h1>
+    <p>Podemos ayudarte a limpiar ventanas, patios, y más. Calidad garantizada.</p>
+  </section>
+  
+  <!-- Contacto -->
+  <section id="contacto" class="contact-section">
+  <footer>
+    <p>
+      <i class="fas fa-phone"></i> <a href="tel:+1234567890">Llámanos</a><br>
+      <i class="fas fa-envelope"></i> <a href="mailto:contacto@A1CleaningServices.com?subject=Consulta%20de%20servicio&body=Hola,%20quiero%20saber%20más%20sobre%20sus%20servicios.">Escríbenos</a>
+
+      <i class="fab fa-instagram"></i> <a href="https://www.instagram.com/_maricelafavela?igsh=NTc4MTIwNjQ2YQ%3D%3D&utm_source=qr" target="_blank">Instagram</a> |
+      <i class="fab fa-facebook"></i> <a href="https://www.facebook.com/maricela.favelazavala?mibextid=wwXIfr" target="_blank">Facebook</a>
+    </p>
+  </footer>
+  
+  
+
